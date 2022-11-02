@@ -2853,6 +2853,7 @@ GameObject:
   - component: {fileID: 1593610629}
   - component: {fileID: 1593610628}
   - component: {fileID: 1593610627}
+  - component: {fileID: 1593610632}
   m_Layer: 0
   m_Name: Man
   m_TagString: PLAYER
@@ -2872,7 +2873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371d443540b850a44897b9dc208c51e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
+  sprint: 20
 --- !u!61 &1593610628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2961,7 +2963,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3015073036887129995, guid: 693dd52bfe272af469505f6777e3ae17, type: 3}
+  m_Sprite: {fileID: -3709846438272184363, guid: c8916a36d83f4ee43bf659967ba70d05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2981,13 +2983,33 @@ Transform:
   m_GameObject: {fileID: 1593610626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.06, y: -3.91, z: 0}
-  m_LocalScale: {x: 2.1558306, y: 1.9128497, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1240704444}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1593610632
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593610626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c855cc8d6de29ad4f852b0b30c050e55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1776246347
 GameObject:
   m_ObjectHideFlags: 0

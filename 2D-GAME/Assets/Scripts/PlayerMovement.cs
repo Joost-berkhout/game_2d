@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float sprint;
     private Rigidbody2D body;
     private Animator anim;
-    private bool grounded;
     
     private void Awake()
     {   
@@ -29,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(2, 2, 1);
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-2, 2, 1);
+
+                anim.SetBool("Walk", horizontalInput != 0);
  
     }
 }
