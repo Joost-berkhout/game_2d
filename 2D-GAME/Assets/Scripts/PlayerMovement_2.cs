@@ -34,12 +34,8 @@ public class PlayerMovement_2 : MonoBehaviour
             MovementX = speed;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
-            body.velocity = new Vector2(body.velocity.x, Jump);
-    
-
-        body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
+            body.velocity = new Vector2(body.velocity.x, Jump);  
         
-        Debug.Log(MovementX + " " + MovementY);
 
             if (Input.GetKeyUp (KeyCode.LeftArrow))
         {

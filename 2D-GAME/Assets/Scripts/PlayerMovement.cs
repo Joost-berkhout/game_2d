@@ -22,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
     {
         body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
         
-        Debug.Log(MovementX + " " + MovementY);
 
             if (Input.GetKeyDown (KeyCode.A))
         {
@@ -32,13 +31,10 @@ public class PlayerMovement : MonoBehaviour
         {
             MovementX = speed;
         }
-        if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             body.velocity = new Vector2(body.velocity.x, Jump);
-    
-
-        body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
-        
-        Debug.Log(MovementX + " " + MovementY);
+            if (Input.GetKeyDown(KeyCode.Space))
+            body.velocity = new Vector2(body.velocity.x, Jump);  
 
             if (Input.GetKeyUp (KeyCode.A))
         {
@@ -55,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
 
         if (Input.GetKeyUp(KeyCode.W))
+            body.velocity = new Vector2(body.velocity.x, passive);
+            if (Input.GetKeyUp(KeyCode.Space))
             body.velocity = new Vector2(body.velocity.x, passive);
 
                     //Flip player when facing left/right.
