@@ -56,7 +56,6 @@ public class PlayerMovement_2 : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, Jump);
             }
             
-            
             if (Input.GetKeyUp (KeyCode.LeftArrow))
         {
             MovementX = passive;
@@ -73,10 +72,6 @@ public class PlayerMovement_2 : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.UpArrow))
             body.velocity = new Vector2(body.velocity.x, passive);
-
-
-
-
 
 
                     //Flip player when facing left/right.
