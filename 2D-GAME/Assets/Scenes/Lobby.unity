@@ -5494,8 +5494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  sprint: 4
-  Jump: 15
+  sprint: 7
+  Jump: 20
   passive: 0
 --- !u!95 &1546883787
 Animator:
@@ -5777,8 +5777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  sprint: 4
-  Jump: 15
+  sprint: 7
+  Jump: 20
   passive: 0
 --- !u!61 &1593610628
 BoxCollider2D:

@@ -48,6 +48,12 @@ public class PlayerMovement : MonoBehaviour
         {
             MovementX = passive;
         }
+            if (Input.GetKey(KeyCode.LeftShift))
+            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
+
+            if (Input.GetKey(KeyCode.S))
+            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
+
         if (Input.GetKeyUp(KeyCode.W))
             body.velocity = new Vector2(body.velocity.x, passive);
 

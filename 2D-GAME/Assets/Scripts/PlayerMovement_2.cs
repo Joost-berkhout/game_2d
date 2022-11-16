@@ -49,6 +49,9 @@ public class PlayerMovement_2 : MonoBehaviour
         {
             MovementX = passive;
         }
+        if (Input.GetKey(KeyCode.DownArrow))
+            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
+
         if (Input.GetKeyUp(KeyCode.UpArrow))
             body.velocity = new Vector2(body.velocity.x, passive);
 
