@@ -5493,8 +5493,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676a548cdc45cd74a98b26682379ca9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 99
-  sprint: 30
+  speed: 3
+  sprint: 4
+  Jump: 15
+  passive: 0
 --- !u!95 &1546883787
 Animator:
   serializedVersion: 4
@@ -5774,8 +5776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371d443540b850a44897b9dc208c51e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
-  sprint: 20
+  speed: 3
+  sprint: 4
+  Jump: 15
+  passive: 0
 --- !u!61 &1593610628
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -4,32 +4,59 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float sprint;
+    [SerializeField] private float Jump;
+    [SerializeField] private float passive;
     private Rigidbody2D body;
     private Animator anim;
+
+    float MovementX;
+    float MovementY;
     
-    private void Awake()
-    {   
-        //Grabs references for rigidbody and animator from game object.
+    private void Start()
+    {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
  
     private void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-        if (Input.GetKey(KeyCode.LeftShift)) body.velocity = new Vector2(Input.GetAxis("Horizontal") * sprint, body.velocity.y);
+        body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
+        
+        Debug.Log(MovementX + " " + MovementY);
 
-        if (Input.GetKey(KeyCode.Space))
-            body.velocity = new Vector2(body.velocity.x, speed);
- 
-        //Flip player when facing left/right.
-        if (horizontalInput > 0.01f)
+            if (Input.GetKeyDown (KeyCode.A))
+        {
+            MovementX = -speed;
+        }
+            if (Input.GetKeyDown (KeyCode.D))
+        {
+            MovementX = speed;
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+            body.velocity = new Vector2(body.velocity.x, Jump);
+    
+
+        body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
+        
+        Debug.Log(MovementX + " " + MovementY);
+
+            if (Input.GetKeyUp (KeyCode.A))
+        {
+            MovementX = passive;
+        }
+            if (Input.GetKeyUp (KeyCode.D))
+        {
+            MovementX = passive;
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+            body.velocity = new Vector2(body.velocity.x, passive);
+
+                    //Flip player when facing left/right.
+        if (MovementX > 0.01f)
             transform.localScale = new Vector3(2, 2, 1);
-        else if (horizontalInput < -0.01f)
+        else if (MovementX >  -0.01f)
             transform.localScale = new Vector3(-2, 2, 1);
 
-                anim.SetBool("Walk", horizontalInput != 0);
- 
+                anim.SetBool("Walk", MovementX != 0);
     }
 }
