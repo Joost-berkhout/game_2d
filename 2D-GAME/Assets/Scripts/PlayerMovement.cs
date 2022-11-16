@@ -83,10 +83,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
             body.velocity = new Vector2(body.velocity.x, passive);
 
-
-
-
-
                     //Flip player when facing left/right.
         if (MovementX > 0.01f)
             transform.localScale = new Vector3(2, 2, 1);
