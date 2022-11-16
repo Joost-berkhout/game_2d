@@ -26,22 +26,20 @@ public class PlayerMovement_2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            MovementY = 1;
+            MovementY = 15;
         }
             if (Input.GetKey(KeyCode.DownArrow))
         {
-            MovementY = -1;
+            MovementY = -15;
         }
             if (Input.GetKey(KeyCode.LeftArrow))
         {
-            MovementX = 1;
+            MovementX = -15;
         }
             if (Input.GetKey(KeyCode.RightArrow))
         {
-            MovementX = 1;
+            MovementX = 15;
         }
 
-
-        
     }
 }
