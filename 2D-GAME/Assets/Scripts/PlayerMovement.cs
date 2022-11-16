@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float checkRadius ;
     public LayerMask whatIsGround;
+    public LayerMask PLAYER;
 
     private int extraJumps;
     public int extraJumpsValue;

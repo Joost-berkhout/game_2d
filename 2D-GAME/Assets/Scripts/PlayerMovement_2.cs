@@ -14,6 +14,7 @@ public class PlayerMovement_2 : MonoBehaviour
     public Transform groundCheck;
     public float checkRadius ;
     public LayerMask whatIsGround;
+    public LayerMask whatIsGround2;
 
     private int extraJumps;
     public int extraJumpsValue;
@@ -29,7 +30,7 @@ public class PlayerMovement_2 : MonoBehaviour
     }
 
     void FixedUpdate(){
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius,whatIsGround);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround, whatIsGround2);
     }
  
     private void Update() //MOVEMENT + ANIMATIONS
