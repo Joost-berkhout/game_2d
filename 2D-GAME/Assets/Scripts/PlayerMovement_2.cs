@@ -33,19 +33,37 @@ public class PlayerMovement_2 : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround, whatIsGround2);
     }
  
-    private void Update() //MOVEMENT + ANIMATIONS
+    private void Update()
     {
-        body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
+        body.velocity = new Vector2(MovementX * speed, body.velocity.y);  
         
+         
+        //Movement LEFT, RIGHT & Passive
             if (Input.GetKeyDown (KeyCode.LeftArrow))
         {
             MovementX = -speed;
+        }
+            else if (Input.GetKeyUp (KeyCode.LeftArrow))
+        {
+            MovementX = passive;
         }
             if (Input.GetKeyDown (KeyCode.RightArrow))
         {
             MovementX = speed;
         }
+            else if (Input.GetKeyUp (KeyCode.RightArrow))
+        {
+            MovementX = passive;
+        }
 
+        //Sprint
+        if (Input.GetKey(KeyCode.RightControl))
+            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
+
+        if (Input.GetKey(KeyCode.DownArrow))
+            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
+
+        //JUMP
         if(isGrounded == true){
             extraJumps = extraJumpsValue;
         }
@@ -56,24 +74,6 @@ public class PlayerMovement_2 : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.UpArrow) && extraJumps == 0 && isGrounded == true){
                 body.velocity = new Vector2(body.velocity.x, Jump);
             }
-            
-            if (Input.GetKeyUp (KeyCode.LeftArrow))
-        {
-            MovementX = passive;
-        }
-            if (Input.GetKeyUp (KeyCode.RightArrow))
-        {
-            MovementX = passive;
-        }
-            if (Input.GetKey(KeyCode.RightControl))
-            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
-
-            if (Input.GetKey(KeyCode.DownArrow))
-            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
-
-        if (Input.GetKeyUp(KeyCode.UpArrow))
-            body.velocity = new Vector2(body.velocity.x, passive);
-
 
                     //Flip player when facing left/right.
         if (MovementX > 0.01f)

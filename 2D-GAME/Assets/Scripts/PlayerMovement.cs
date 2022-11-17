@@ -32,19 +32,29 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius,whatIsGround);
     }
  
-    private void Update() //MOVEMENT + ANIMATIONS
+    private void Update() 
     {
         body.velocity = new Vector2(MovementX * speed, body.velocity.y);   
         
+        //Movement LEFT, RIGHT & Passive
             if (Input.GetKeyDown (KeyCode.A))
         {
             MovementX = -speed;
+        }
+            else if (Input.GetKeyUp (KeyCode.A))
+        {
+            MovementX = passive;
         }
             if (Input.GetKeyDown (KeyCode.D))
         {
             MovementX = speed;
         }
+            else if (Input.GetKeyUp (KeyCode.D))
+        {
+            MovementX = passive;
+        }
 
+        //JUMP
         if(isGrounded == true){
             extraJumps = extraJumpsValue;
         }
@@ -64,25 +74,11 @@ public class PlayerMovement : MonoBehaviour
                 body.velocity = new Vector2(body.velocity.x, Jump);
             }
             
-            
-            if (Input.GetKeyUp (KeyCode.A))
-        {
-            MovementX = passive;
-        }
-            if (Input.GetKeyUp (KeyCode.D))
-        {
-            MovementX = passive;
-        }
             if (Input.GetKey(KeyCode.LeftShift))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
 
             if (Input.GetKey(KeyCode.S))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
-
-        if (Input.GetKeyUp(KeyCode.W))
-            body.velocity = new Vector2(body.velocity.x, passive);
-        if (Input.GetKeyUp(KeyCode.Space))
-            body.velocity = new Vector2(body.velocity.x, passive);
 
                     //Flip player when facing left/right.
         if (MovementX > 0.01f)
