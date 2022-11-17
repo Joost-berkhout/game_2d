@@ -59,8 +59,8 @@ public class PlayerMovement_2 : MonoBehaviour
         //Sprint
         if (Input.GetKey(KeyCode.RightControl))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
-
-        if (Input.GetKey(KeyCode.DownArrow))
+        
+        if (Input.GetKey(KeyCode.RightShift))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
 
         //JUMP

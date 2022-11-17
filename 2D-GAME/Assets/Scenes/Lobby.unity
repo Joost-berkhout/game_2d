@@ -5712,7 +5712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  sprint: 7
+  sprint: 5
   Jump: 20
   passive: 0
   groundCheck: {fileID: 1571258778}
@@ -6036,7 +6036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  sprint: 7
+  sprint: 5
   Jump: 20
   passive: 0
   groundCheck: {fileID: 38771971}

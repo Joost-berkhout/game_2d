@@ -77,8 +77,6 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
 
-            if (Input.GetKey(KeyCode.S))
-            body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
 
                     //Flip player when facing left/right.
         if (MovementX > 0.01f)
