@@ -10884,7 +10884,7 @@ MonoBehaviour:
   PLAYER:
     serializedVersion: 2
     m_Bits: 0
-  extraJumpsValue: 2
+  extraJumpsValue: 0
 --- !u!61 &1818009170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11045,7 +11045,7 @@ MonoBehaviour:
   whatIsGround2:
     serializedVersion: 2
     m_Bits: 0
-  extraJumpsValue: 2
+  extraJumpsValue: 0
 --- !u!95 &1818281162
 Animator:
   serializedVersion: 4
