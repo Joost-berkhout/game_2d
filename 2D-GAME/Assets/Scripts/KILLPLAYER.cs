@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class KILLPLAYER : MonoBehaviour
 {
 
-    public int Respawn;
+        public int Respawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class KILLPLAYER : MonoBehaviour
     {
         if (other.CompareTag("PLAYER"))
         {
-            SceneManager.LoadScene(Respawn);
+            SceneManager.LoadScene(1);
         }
 
     }
