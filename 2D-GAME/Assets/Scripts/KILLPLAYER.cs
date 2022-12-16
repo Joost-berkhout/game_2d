@@ -24,7 +24,6 @@ public class KILLPLAYER : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-
     }
 
 }
