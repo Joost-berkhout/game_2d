@@ -65,14 +65,6 @@ public class PlayerMovement : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.W) && extraJumps == 0 && isGrounded == true){
                 body.velocity = new Vector2(body.velocity.x, Jump);
             }
-
-                        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0){
-                body.velocity = new Vector2(body.velocity.x, Jump);
-                extraJumps--;
-            }
-            else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true){
-                body.velocity = new Vector2(body.velocity.x, Jump);
-            }
             
             if (Input.GetKey(KeyCode.LeftShift))
             body.velocity = new Vector2(MovementX * sprint, body.velocity.y);
