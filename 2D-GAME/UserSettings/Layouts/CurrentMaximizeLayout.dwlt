@@ -250,9 +250,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 5625fffff226ffff7849ffffb25affff8e5bffffb25fffff7060ffffc064ffff5e65ffffbc77ffffe27affff9a7bffff8e7cffff467effff467fffff7280ffff9281ffff3885ffff96baffff5cd3ffff9cd3ffff46d5ffff70d5ffffc0d5ffff9ad9ffff2edaffff64efffff2cf0ffff2cfbffffc45f0000066000001c6000007660000088600000e47e0000f27e0000568100006c810000248d0000568f000058f90000fefe0000a40401004a0a0100041a0100d81d0100f6290100ba2c0100d62c0100ca2d0100c83301008e360100aa360100ec3601009e370100f637010018380100fcd70100
+      m_SelectedIDs: 16600000
+      m_LastClickedID: 24598
+      m_ExpandedIDs: 2cfbffff4a60000084600000bc6000007e6100008a61000002620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -424,9 +424,9 @@ MonoBehaviour:
       floating: 1
       collapsed: 0
       displayed: 0
-      snapOffset: {x: -384.40002, y: -290.19998}
+      snapOffset: {x: 160, y: 44}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       id: Scene View/Camera
       index: 1
       layout: 4
@@ -583,9 +583,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 50.544247, y: 17.108057, z: -0.7775848}
+    m_Target: {x: 18.403858, y: -13.575686, z: -1.6477927}
     speed: 2
-    m_Value: {x: 50.544247, y: 17.108057, z: -0.7775848}
+    m_Value: {x: 18.403858, y: -13.575686, z: -1.6477927}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -636,9 +636,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 30.82278
+    m_Target: 44.414585
     speed: 2
-    m_Value: 30.82278
+    m_Value: 44.414585
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -732,22 +732,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Stylized Lava Materials/Lava02
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Stylized Lava Materials/Lava02
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Joost\BESTANDEN\SCHOOL\ICT\GAME-2D\2D-GAME
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1a610000
-    m_LastClickedID: 24858
-    m_ExpandedIDs: 00000000f0600000f2600000f4600000f6600000f4690000566e000046730000ca7300009679000000ca9a3b
+    m_SelectedIDs: 40630000
+    m_LastClickedID: 25408
+    m_ExpandedIDs: 00000000b2620000b4620000b6620000b8620000ba620000bc620000be620000c0620000c2620000c46200004263000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -775,7 +775,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f0600000f2600000f4600000f4690000566e000046730000ca7300009679000000ca9a3b
+    m_ExpandedIDs: 00000000b2620000b4620000b6620000b8620000ba620000bc620000be620000c2620000c46200004263000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -800,9 +800,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 16600000
+    m_LastClickedInstanceID: 24598
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000aa920000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1054,8 +1054,8 @@ MonoBehaviour:
     y: 0
     width: 364
     height: 722.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
