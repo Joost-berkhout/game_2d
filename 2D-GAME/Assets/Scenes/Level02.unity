@@ -2897,7 +2897,7 @@ MonoBehaviour:
   Jump: 20
   passive: 0
   groundCheck: {fileID: 179003681}
-  checkRadius: 0.5
+  checkRadius: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 5120
@@ -9281,7 +9281,7 @@ MonoBehaviour:
   Jump: 20
   passive: 0
   groundCheck: {fileID: 1661357544}
-  checkRadius: 0.5
+  checkRadius: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 3072
